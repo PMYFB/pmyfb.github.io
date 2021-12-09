@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-*
-
-{
+*{
     font-family: 'Roboto', "Verdana", sans-serif;
     line-height: 1.4;
     margin: 0;
     padding: 0;
-    font-size: 20px;
     box-sizing: border-box;
 }
 
 html
 {
 scroll-behavior: smooth;
+}
+
+#header{
+    padding-top: 1.5%;
 }
 
 a {
@@ -123,12 +124,13 @@ hr {
     margin-bottom: 20px;
 }
 
-.soc-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-}
+    .soc-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 1%;
+    }
 
         .soc-links a {
             -moz-transition: top .2s ease-in-out;
@@ -193,11 +195,8 @@ hr {
                 top: -5px;
                 /* box-shadow: 2px 5px 7px gray; */
             }
-
-
-
-body
-{
+           
+body{
     display: block;
     justify-content: center;
     align-content: center;
@@ -223,16 +222,16 @@ body
     flex-wrap: wrap;
 }
 
-.items .box{
-    position: relative;
-    width: 48%;
-    height: 502px;
-    overflow: hidden;
-    transition: 0.5s;
-    margin: 1%;
-}
+    .items .box{
+        position: relative;
+        width: 31%;
+        height: 502px;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 1%;
+    }
 
-    
+
     .items .box:hover{
         z-index: 2;
         transform: scale(1.15);
@@ -312,10 +311,25 @@ body
         transition-delay: 0.5s;
     }
 
-@media only screen and (max-width: 1024px){
+    @media only screen and (max-width: 1280px){
+        #header{
+            padding-top: 2.5%;
+        }
+
+        .items .box{
+            position: relative;
+            width: 48%;
+            height: 502px;
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 1%;
+        }
+    }
+
+@media only screen and (max-width: 800px){
 
     #header{
-        padding-top: 2.5%;
+        padding-top: 5%;
     }
 
     #aboutMe{
@@ -390,5 +404,44 @@ body
         margin-bottom: 5%;
     }
 
-}
+    .soc-links a:before {
+        -moz-transition: background-color .2s ease-in-out;
+        -webkit-transition: background-color .2s ease-in-out;
+        -ms-transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease-in-out;
+        background-color: rgba(85, 85, 85, 0);
+        border-radius: 12px;
+        box-shadow: inset 0px 0px 0px 1px #ffffff, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+        color:#ffffff;
+        display: block;
+        font-size: 26px;
+        line-height: 48px;
+        width: 48px;
+        text-align: center;
+        outline: 0;
+        overflow: hidden;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+    }
 
+        .soc-links a.fa-github:before {
+            background-color: #FFFFFF;
+            color: #282828;
+        }
+
+        .soc-links a.fa-twitter:before {
+            background-color: #55acee;
+        }
+
+        .soc-links a.fa-linkedin-in:before {
+            background-color: #0a66c2;
+        }
+
+        .soc-links a.fa-xing:before {
+            background-color: #0698a0;
+        }
+
+        .soc-links a.fa-at:before {
+            background-color: rgb(240, 156, 47);
+        }
+
+}
