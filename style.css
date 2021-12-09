@@ -403,45 +403,5 @@ body{
         margin: 0px;
         margin-bottom: 5%;
     }
-
-    .soc-links a:before {
-        -moz-transition: background-color .2s ease-in-out;
-        -webkit-transition: background-color .2s ease-in-out;
-        -ms-transition: background-color .2s ease-in-out;
-        transition: background-color .2s ease-in-out;
-        background-color: rgba(85, 85, 85, 0);
-        border-radius: 12px;
-        box-shadow: inset 0px 0px 0px 1px #ffffff, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-        color:#ffffff;
-        display: block;
-        font-size: 26px;
-        line-height: 48px;
-        width: 48px;
-        text-align: center;
-        outline: 0;
-        overflow: hidden;
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
-    }
-
-        .soc-links a.fa-github:before {
-            background-color: #FFFFFF;
-            color: #282828;
-        }
-
-        .soc-links a.fa-twitter:before {
-            background-color: #55acee;
-        }
-
-        .soc-links a.fa-linkedin-in:before {
-            background-color: #0a66c2;
-        }
-
-        .soc-links a.fa-xing:before {
-            background-color: #0698a0;
-        }
-
-        .soc-links a.fa-at:before {
-            background-color: rgb(240, 156, 47);
-        }
-
+    
 }
